@@ -40,7 +40,7 @@ def test_add_empty_reponse_body(client):
         "id": 4446,
 		"lucky_numbers": [12,34,33,45,32,12]
 	})
-    assert response.data != b""
+    assert response.data == b""
 
 @pytest.mark.it("Implement method GET /members")
 def test_get_members_exist(client):
